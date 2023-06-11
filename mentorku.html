@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		body {
+			background-image: url(logoblur.jpg);
+			background-size: 320px;
+			background-repeat: repeat;
+			filter: blur(10px;);
+			width: 100%;
+			height: 1000px;
+		}
+
+		.logo1 {
+			width: 80px;
+			float: left;
+			margin-right: 20px;
+			margin-left: 20px;
+		}
+
+		.logo {
+			width: 150px;
+			margin-top: -30px;
+			margin-left: 360px;
+		}
+
+		li {
+			list-style-type: none;
+			margin-right: 20px;
+		}
+
+		a {
+			color: black;
+			text-decoration: none;
+		}
+
+		.header {
+			height: 80px;
+			line-height: 80px;
+			font-size: 16pt;
+			width: 100%;
+			background-color: white;
+		}
+
+		.sign {
+			margin-left: 1080px;
+			margin-top: -150px;
+		}
+
+		.menu a {
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+
+		.menu a:hover {
+			background-color: orange;
+			display: block;
+		}
+
+		.mentorku {
+			margin-left: 450px;
+			height: 50px;
+			width: 80px;
+			border-radius: 20px;
+		}
+
+		.sign button {
+			height: 30px;
+			width: 50px;
+		}
+
+		.ig {
+			width: 40px;
+			margin-right: 20px;
+			float: left;
+			margin-left: 1010px;
+			margin-top: -130px;
+		}
+
+		* {box-sizing: border-box}
+
+		body {font-family: "Lato", sans-serif;}
+
+	.dropbtn {
+	  background-color: #3498DB;
+	  color: white;
+	  padding: 16px;
+	  font-size: 16px;
+	  border: none;
+	  cursor: pointer;
+	  width: 100px;
+	}
+
+	.dropbtn:hover, .dropbtn:focus {
+	  background-color: #2980B9;
+	}
+
+	.dropdown {
+	  position: relative;
+	  display: inline-block;
+	}
+
+	.dropdown-content {
+	  display: none;
+	  position: absolute;
+	  background-color: #f1f1f1;
+	  min-width: 400px;
+	  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	  z-index: 1;
+	  font-size: 12pt;
+	  line-height: 30px;
+	}
+
+	.dropdown-content a {
+	  color: black;
+	  padding: 12px 16px;
+	  text-decoration: none;
+	  display: block;
+	}
+
+	.dropdown a:hover {background-color: #ddd;}
+
+	.show {display: block;}
+
+	.tab {
+	  float: left;
+	  border: 1px solid #ccc;
+	  background-color: #f1f1f1;
+	  width: 30%;
+	  height: 400px;
+	}
+
+	.tab button {
+	  display: block;
+	  background-color: inherit;
+	  color: black;
+	  padding: 22px 16px;
+	  width: 100%;
+	  border: none;
+	  outline: none;
+	  text-align: left;
+	  cursor: pointer;
+	  transition: 0.3s;
+	  font-size: 17px;
+	  height: 100px;
+	}
+
+	.tab button:hover {
+	  background-color: #ddd;
+	}
+
+	.tab button.active {
+	  background-color: #ccc;
+	}
+
+	.tabcontent {
+	  float: left;
+	  padding: 0px 12px;
+	  border: 1px solid #ccc;
+	  width: 70%;
+	  border-left: none;
+	  height: 400px;
+	}
+	</style>
+</head>
+<body>
+	<div class="header">
+		<img src="logo1.png" class="logo1">
+
+		<div class="dropdown">
+		  <button onclick="myFunction()" class="dropbtn">Grade</button>
+		  <div id="myDropdown" class="dropdown-content">
+		    <div class="tab">
+		  <button class="tablinks" onclick="openCity(event, 'SD')" id="defaultOpen">SD</button>
+		  <button class="tablinks" onclick="openCity(event, 'SMP')">SMP</button>
+		  <button class="tablinks" onclick="openCity(event, 'SMA IPA')">SMA IPA</button>
+		  <button class="tablinks" onclick="openCity(event, 'SMA IPS')">SMA IPS</button>
+		</div>
+
+		<div id="SD" class="tabcontent">
+		  <h3>Materials</h3>
+		  <p>1. Pendidikan Kewarganegaraan (PKn)</p>
+		  <p>2. Bahasa Indonesia</p>
+		  <p>3. Matematika</p>
+		  <p>4. Seni Budaya dan Prakarya</p>
+		  <p>5. Pendidikan Jasmani, Olahraga dan Kesehatan (PJOK)</p>
+		  <p>6. Pendidikan IPA</p>
+		  <p>7. Pendidikan IPS</p>
+		</div>
+
+		<div id="SMP" class="tabcontent">
+		  <h3>Materials</h3>
+		  <p>1. Matematika</p> 
+		  <p>2. Fisika</p>
+		  <p>3. Kimia</p>
+		  <p>4. Biologi</p>
+		  <p>5. Ekonomi</p>
+		  <p>6. Sosiologi</p>
+		  <p>7. Ekonomi</p>
+		  <p>8. Sejarah</p>
+		</div>
+
+		<div id="SMA IPA" class="tabcontent">
+		  <h3>Materials</h3>
+		  <p>1. Bahasa Indonesia</p>
+		  <p>2. Bahasa Inggris </p>
+		  <p>3. Pendidikan Kewarganegaraan</p>
+		  <p>4. Matematika Wajib</p>
+		  <p>5. Matematika Minat</p>
+		  <p>6. Biologi</p>
+		  <p>7. Fisika </p>
+		  <p>8. Kimia </p>
+		</div>
+
+		<div id="SMA IPS" class="tabcontent">
+		  <h3>Materials</h3>
+		  <p>1. Bahasa Indonesia</p>
+		  <p>2. Bahasa Inggris </p>
+		  <p>3. Pendidikan Kewarganegaraan</p>
+		  <p>4. Matematika Wajib</p>
+		  <p>5. Geografi</p>
+		  <p>6. Ekonomi</p>
+		  <p>7. Sejarah Wajib</p>
+		  <p>8. Sejarah Minat</p>
+		</div>
+
+		<script>
+		function openCity(evt, cityName) {
+		  var i, tabcontent, tablinks;
+		  tabcontent = document.getElementsByClassName("tabcontent");
+		  for (i = 0; i < tabcontent.length; i++) {
+		    tabcontent[i].style.display = "none";
+		  }
+		  tablinks = document.getElementsByClassName("tablinks");
+		  for (i = 0; i < tablinks.length; i++) {
+		    tablinks[i].className = tablinks[i].className.replace(" active", "");
+		  }
+		  document.getElementById(cityName).style.display = "block";
+		  evt.currentTarget.className += " active";
+		}
+
+		  document.getElementById("defaultOpen").click();
+		</script>
+		  </div>
+		</div>
+
+		<script>
+		function myFunction() {
+		  document.getElementById("myDropdown").classList.toggle("show");
+		}
+
+		window.onclick = function(event) {
+		  if (!event.target.matches('.dropbtn')) {
+		    var dropdowns = document.getElementsByClassName("dropdown-content");
+		    var i;
+		    for (i = 0; i < dropdowns.length; i++) {
+		      var openDropdown = dropdowns[i];
+
+		    }
+		  }
+		}
+		</script>
+		</div>
+	</div>
+
+
+		<a href="http://mentorku.org/auth/login"><img src="logo.png" class="logo"></a> 
+		<a href="https://instagram.com/mentorku.ina?igshid=YmMyMTA2M2Y="><img src="logo ig.png" class="ig"></a>
+
+		<div class="sign">
+			<button type="submit"><a href="#">Sign Up</a></button>
+			<button type="submit"><a href="#">Log In</a></button>
+		</div>
+
+		
+		
+	</div>	
+</body>
+</html>

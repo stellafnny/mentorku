@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>4 Rivers Smokehouse | The Art of Smoking</title>
+	<style type="text/css">
+		* {
+			margin: 0;
+			padding: 0;
+			font-size: 15pt;
+			font-family: 'Gill Sans MT'
+		}
+
+ 		body {
+ 			height: 3800px;
+ 		}
+
+		a {
+			text-decoration: none;
+			color: black;
+			display: inline-block;
+		}
+
+		a:hover {
+			color: white;
+		}
+
+		li {
+			float: left;
+			margin-right: 20px;
+			list-style-type: none;
+		}
+
+		li:hover {
+			font-weight: bold;
+		}
+
+		ul {
+			line-height: 30px;
+			display: none;
+		}
+
+		.nav {
+			height: 80px;
+			padding-left: 450px;
+			line-height: 80px;
+			position: fixed;
+			width: 900px;
+			background-color: white;
+		}
+
+		.nav li {
+			font-size: 15pt;
+		}
+
+		.nav a {
+			color: #34495e;
+			font-weight: bold;
+		}
+
+		.nav a:hover {
+			color: #aeb6bf;
+		}
+
+		.logo1 {
+			position: absolute;
+			top: 0;
+			left: 20px;
+		}
+
+		.dropdown {
+ 			position: relative;
+ 		}
+
+		.dropdown:hover ul {
+			position: absolute;
+			display: block;
+			margin-top: 80px;
+			background-color: #fcf3cf;
+			height: 120px;
+		}
+
+		.loc {
+			margin-left: -300px;
+		}
+
+		.order {
+			background-color: #FF5733;
+			border-radius: 5px;
+			height: 50px;
+			width: 160px;
+			line-height: 50px;
+			margin-top: 15px;
+		}
+
+		.order a {
+			color: white;
+			font-size: 12pt;
+			font-weight: bold;
+			margin-left: 13px;
+		}
+
+		.order a:hover {
+			color: #f0b27a ;
+		}
+
+		.box1, .box2, .box3, .box4, .box5 {
+			float: left;
+			display: inline-block;
+			margin-left: 30px;
+			margin-right: 10px;
+			margin-top: 10px;
+		}
+
+		.box1 li, .box2 li, .box3 li, .box4 li, .box5 li {
+			float: none;
+		}
+
+		.box1 a, .box2 a, .box3 a, .box4 a, .box5 a {
+			font-size: 17pt;
+			font-weight: normal;
+			color:  #eb984e;
+		}
+
+		.content a:hover {
+			color: #d35400;
+		}
+
+		.vid {
+			width: 1350px;
+			height: auto;
+			margin-top: 0;
+			width: 100%;
+		}
+
+		.quotes1 {
+			float: left;
+			margin: 0 auto;
+			position: absolute;
+			margin-left: 170px;
+			margin-top: -470px;
+			line-height: 60px;
+			text-align: center;
+			text-transform: uppercase;
+			color: white;
+			font-family: 'Arial';
+			font-weight: bold;
+		}
+
+		.quotes1 p {
+			font-size: 45pt;
+		}
+
+		.delivery, .catering {
+			float: left;
+			background-color: #FF5733;
+			border-radius: 5px;
+			margin-top: 50px;
+			font-size: 13pt;
+		}
+
+		.delivery {
+			margin-left: 230px;
+			margin-right: 30px;
+			width: 300px;
+		}
+
+		.catering {
+			width: 200px;
+		}
+
+		.quotes2 {
+			width: 950px;
+			height: 40px;
+			margin: 0 auto;
+			line-height: 40px;
+			margin-top: 20px;
+		}
+
+		.text1 {
+			width: 680px;
+			float: left;
+			margin-right: 20px
+		}
+
+		.text1 p {
+			font-size: 17pt;
+			font-weight: bold;
+
+		}
+
+		.sign {
+			width: 250px;
+			float: left;
+			margin-right: 50px;
+		}
+
+		.su, .si {
+			float: left;
+			margin-right: 20px;
+			border-radius: 4px;
+			width: 90px;		
+		}
+
+		.su p, .si p {
+			margin-left: 15px;
+			font-size: 13pt;
+		}
+
+		.su {
+			background-color: #eaecee;
+			color: #FF5733;
+
+		}
+
+		.si {
+			background-color: #FF5733;
+			color: white;
+		}
+
+		.pm {
+			width: 1000px;
+			height: 600px;
+			margin: 0 auto;
+			margin-top: 50px;
+			position: relative;
+		}
+
+		.img1 {
+			width: 1000px;
+			height: 500px;
+			position: absolute;
+		}
+
+		.text2 {
+			position: absolute;
+			margin: 30px;
+			width: 500px;
+		}
+
+		.ordernow {
+			width: 130px;
+		}
+
+		.text2 h1 {
+			font-size: 40pt;
+			text-transform: uppercase;
+			color: white;
+			font-family: 'Arial';
+
+		}
+
+		.text2 p {
+			font-size: 23pt;
+			color: white;
+		}
+
+		.ordernow {
+			background-color: #FF5733;
+			border-radius: 5px;
+			width: 150px;
+			height: 50px;
+			line-height: 50px;
+			margin-top: 10px;
+		}
+
+		.ordernow p {
+			font-size: 12pt;
+			margin-left: 20px;
+			font-weight: bold;
+		}
+
+		.menu {
+			height: 540px;
+		}
+
+		.photo {
+			width: 630px;
+			float: left;
+			size: 600px 540px;
+		}
+
+		.art p {
+			margin-left: 30px;
+			font-size: 40pt;
+			text-transform: uppercase;
+			font-weight: bold;
+			word-spacing: 5px;
+			color: #FF5733;
+		}
+
+		.img2 {
+			width: 630px;
+			float: left;
+		}
+
+		.text3 {
+			float: left;
+			width: 670px;
+		}
+
+		.icon {
+			width: 200px;
+			height: 130px;
+			float: left;
+		}
+
+		.icon1, .icon2, .icon3 {
+			width: 180px;
+			height: 130px;
+			margin-left: 20px;
+		}
+
+		.def {
+			width: 460px;
+			height: 130px;
+			float: left;
+			margin-left: 9px;
+		}
+
+		.def p {
+			padding-top: 30px;
+			padding-left: 10px;	
+		}
+
+		.text4 {
+			margin: 0 auto;
+			width: 450px;
+			margin-top: -25px;
+			background-color: white;
+		}
+
+		.text4 p {
+			font-size: 30pt;
+			font-weight: bold;
+			text-transform: uppercase;
+			color: #FF5733;
+		}
+
+		.box {
+			width: 1349px;
+			height: 500px;
+			margin-top: 40px;
+		}
+
+		.exp {
+			width: 350px;
+			height: 300px;
+			border: 2px #FF5733 solid;
+			text-align: center;
+			padding-left: 20px;
+			padding-right: 20px;
+			margin-top: 100px;
+			margin-left: 45px;
+		}
+
+		.exp h1 {
+			margin-top: 160px;
+			margin-left: 20px;
+			margin-right: 20px;
+			margin-bottom: 10px;
+			text-transform: uppercase;
+			color: #34495e;
+		}
+
+		.exp p {
+			color: #566573;
+		}
+
+		.food1, .food2, .food3 {
+			width: 300px;
+			height: 250px;
+			position: absolute;
+			top: 2090px;
+			left: 100px;
+		}
+
+		.food2 {
+			left: 540px;
+		}
+
+		.food3 {
+			left: 980px;
+		}
+
+		.food {
+			float: left;
+		}
+
+		.text5 p {
+			text-transform: uppercase;
+			background-color: #FF5733;
+			color: white;
+			border-radius: 5px;
+			text-align: center;
+			width: 200px;
+			height: 50px;
+			line-height: 50px;
+			margin: 0 auto;
+			margin-top: -30px;
+			font-size: 12pt;
+			font-weight:bold;
+		}
+
+		.pro {
+			width: 600px;
+			float: left;
+		}
+	
+		.adv {
+			float: left;
+			width: 1340px;
+			margin-top: 50px;
+			margin-left: 55px;
+			margin-bottom: 50px;
+		}
+
+		.join, .where {
+			background-color: brown;
+			height: 300px;
+			padding: 30px;
+		}
+
+		.join h2, .where h2 {
+			font-size: 32pt;
+			font-weight: bold;
+			color: #FF5733;
+			margin-bottom: 10px;
+		}
+
+		.join p, .where p {
+			color: #34495e;
+			margin-bottom: 10px;
+		}
+
+		.team, .sauces {
+			width: 600px;
+			height: 570px;
+			float: left;
+			margin-left: 20px;
+			background-color: #f5cba7;
+		}
+
+		.browse, .visit {
+			background-color: #FF5733;
+			border-radius: 5px;
+			text-transform: uppercase;
+			width: 150px;
+			height: 30px;
+			font-size: 12pt;
+			font-weight: bold;
+			padding-top: 10px;
+			color: white;
+		}
+
+		.browse {
+			padding-left: 20px;
+			width: 140px;
+		}
+
+		.visit {
+			padding-left: 25px;
+			width: 160px;
+		}
+
+		.pro {
+			margin-bottom: 20px;
+		}
+
+		.test1 {
+			height: 650px;
+		}
+
+		.test2 {
+			height: 270px;
+		}
+
+		.est {
+			height: 210px;
+			width: 1250px;
+			margin-left: 60px;
+			margin-bottom: 50px;
+		}
+
+		.text6 {
+			height: auto;
+			font-size: 25pt;
+			text-align: center;
+			font-weight: bold;
+			font-size: 25pt;
+			color: #34495e;
+		}
+
+		sub {
+			font-size: 35pt;
+			color: #FF5733;
+			text-transform: uppercase;
+			font-weight: bold;
+		}
+
+		.est, .text7, .text8 {
+			float: left;
+		}
+
+		.text7, .text8 {
+			width: 600px;
+			margin-top: 10px;
+			color: #34495e;
+		}
+
+		.text7 p, .text8 p {
+			text-align: justify;
+			line-height: 25px;
+		}
+
+		.text7 {
+			margin-right: 40px;
+		}
+
+		.footer {
+			background-color: #5f6a6a;
+			height: 290px;
+		}
+
+		.logo2, .logo3{
+			height: 100px;
+			margin-top: 80px;
+		}
+
+		.logo2 {
+			margin-left: -1220px;
+			margin-right: 40px;
+		}
+
+		.link a, .river a, .connect a {
+			color: white;
+		}
+
+		.link li:hover, .river li:hover, .connect li:hover {
+			font-weight: normal;
+			color: white;
+		}
+
+		.link {
+			margin-left: 500px;
+			margin-right: 20px;
+		}
+
+		.link, .river {
+			float: left;
+			margin-top: 20px;
+		}
+
+		.link li, .river li {
+			float: none;
+			line-height: 32px;
+		}
+
+		.top {
+			text-transform: uppercase;
+			color: #FF5733;
+			font-weight: bold;
+		}
+
+		.top li:hover {
+			color: #FF5733;
+		}
+
+		.ctc {
+			background-color: #FF5733;
+			border-radius: 5px;
+			width: 130px;
+			padding-top: 5px;
+			padding-bottom: 5px;
+			text-transform: uppercase;
+			font-size: 12pt;
+			font-weight: bold;
+			margin-top: 10px;
+		}
+
+		.connect {
+			margin-top: -120px;
+			margin-bottom: 20px;
+		}
+
+		.connect li {
+			float: none;
+			text-align: center;
+			line-height: 30px;
+		}
+
+		.sosmed1, .sosmed2, .sosmed3, .sosmed4 {
+			width: 30px;
+			height: 30px;
+			float: left;
+			margin-left: 10px;
+			margin-top: 20px;
+		}
+
+		.sosmed1 {
+			margin-left: 100px;
+		}
+
+		.copyright {
+			background-color: #FF5733;
+			height: 60px;
+			padding-left: 30px;
+			line-height: 60px;
+		}
+
+		.copyright a, .copyright li {
+			color: white;
+		}
+
+		.copyright a:hover, .copyright li:hover {
+			font-weight: normal;
+		}
+
+		.cr {
+			margin-left: 650px;
+		}
+
+	
+	</style>
+</head>
+<body>
+	<div class="nav">
+		<img src="logo1.png" class="logo1">
+		<li><a href="#">MENU</a></li>
+
+		<div class="dropdown">
+			<li><a href="#">LOCATIONS</a></li>
+		<div class="loc">
+		<ul class="content">
+			<div class="box1">
+				<li><a href="#">Coral Springs</a></li>
+				<li><a href="#">Daytona Beach</a></li>
+				<li><a href="#">Gaineville</a></li>
+			</div>
+			<div class="box2">
+				<li><a href="#">Jacksonville</a></li>
+				<li><a href="#">Kissimmee</a></li>
+				<li><a href="#">Longwood</a></li>
+			</div>
+			<div class="box3">
+				<li><a href="#">Orange Park</a></li>
+				<li><a href="#">Orlando - UCF</a></li>
+				<li><a href="#">Orlando - SoDo</a></li>
+			</div>
+			<div class="box4">
+				<li><a href="#">Tallahassee</a></li>
+				<li><a href="#">Tampa</a></li>
+				<li><a href="#">South Tampa</a></li>
+			</div>
+			<div class="box5">
+				<li><a href="#">Winter Garden</a></li>
+				<li><a href="#">Winter Park</a></li>
+				<li><a href="#">Lakeland - Coming Soon</a></li>
+			</div>
+		</div>
+		</ul>
+		</div>
+
+		<li><a href="#">CATERING</a></li>
+		<li><a href="#">SHOP</a></li>
+		<li><a href="#">REWARDS</a></li>
+		<li><a href="#">GIFT CARDS</a></li>
+		<li  class="order"><a href="#">ORDER ONLINE</a></li>
+	</div>
+
+	<div class="vid">
+		<video src="bg video.mp4" class="vid" controls loop autoplay muted></video>
+	</div>
+
+	<div class="quotes1">
+		<p>Family Owned. Locally Made.</p>
+		<p>Community Focused.</p>
+		<div class="delivery">Order takeout & delivery</div>
+		<div class="catering">Order Catering</div>
+	</div>
+
+	<div class="quotes2">
+		<div class="text1">
+			<p>START EARING BIGGER, BETTER, AND QUICKER REWARD</p>
+		</div>
+		<div class="su">
+			<p>SIGN UP</p>
+		</div>
+		<div class="si">
+			<p>SIGN IN</p>
+		</div>
+	</div>
+
+	<div class="pm">
+		<img src="image1.jpg" class="img1">
+		<div class="text2">
+			<h1>2 Hot Potatoes!</h1>
+			<p>Spud Love and Spud Crush are back! Fall in love all over again.</p>
+			<div class="ordernow">
+				<p>ORDER NOW</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="menu">
+		<div class="photo">
+			<img src="image2.jpg" class="img2">
+		</div>
+
+		<div class="text3">
+			<div class="art">
+				<p>The Art of Smoking</p>
+			</div>
+			<div class="brisket">
+				<div class="icon">
+					<img src="icon1.png" class="icon1">
+				</div>
+				<div class="def">
+					<p>30-day wet-aged beef brisket rubbed with our 4R Brisket Rub and smoked for 18 hours. Hand sliced to order.</p>
+				</div>
+			</div>
+
+			<div class="chicken">
+				<div class="icon">
+					<img src="icon2.png" class="icon2">
+				</div>
+				<div class="def">
+					<p>Seasoned with 4R All Purpose Rub and smoked to perfection. Enjoy on the bone or pulled and tossed in 4R Signature Sauce.</p>
+				</div>
+			</div>
+
+			<div class="pork">
+				<div class="icon">
+					<img src="icon3.png" class="icon3">
+				</div>
+				<div class="def">
+					<p>Classic pulled pork from bone-in pork shoulder rubbed with our 4R All Purpose Rub and smoked for 12 hours until fork-tender.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="fav">
+		<hr>
+		<div class="text4">
+			<p>A Few 4R Favorites</p>
+		</div>	
+		<div class="box">
+			<img src="food1.png" class="food1">
+
+			<div class="food">
+				<div class="exp">
+					<h1>Burnt Ends Melt</h1>
+					<p>Smokehouse Burnt Ends with provolone & cheddar cheese topped with caramelized onions on sliced sourdough bread.</p>
+				</div>
+			</div>
+			<img src="food2.png" class="food2">
+
+			<div class="food">
+				<div class="exp">
+					<h1>Six Shooter</h1>
+					<p>Baked cheese grits piled high with pulled pork, Southern Coleslaw, pickles, jalapeños and 4R Signature Sauce.</p>
+				</div>
+			</div>
+
+			<img src="food3.png" class="food3">
+
+			<div class="food">
+				<div class="exp">
+					<h1>BBQ Quesadilla</h1>
+					<p>Your choice of meat, cheddar cheese and 4R Signature Sauce on a tortilla and grilled to perfection.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="view">
+		<hr>
+		<div class="text5">
+			<p>View full menu</p>
+		</div>
+	</div>
+
+	<div class="adv">
+		<div class="team">
+			<img src="team.jpg" class="pro">
+			<div class="join">
+				<h2>Join the 4R Family</h2>
+				<p>We’re always looking for great talent and now accepting applications for all positions.</p>
+				<div class="browse">browse jobs</div>
+			</div> 
+		</div>
+
+		<div class="sauces">
+			<img src="sauces.jpg" class="pro">
+			<div class="where">
+				<h2>4R Wherever You Are</h2>
+				<p>Enjoy 4 Rivers Sauces and foods at home, at work, and all year long.</p>
+				<div class="visit">visit the shop</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="test1"></div>
+
+	<div class="est">
+		<p class="text6">EST. <sub>Our Beginnings</sub> 2009</p>
+		<div class="text7">
+			<p>4 Rivers Smokehouse began with the launch of the “Barbecue Ministry” in 2004, when John hosted a cookout fundraiser to support a local family whose young daughter was battling cancer. This one event resulted in a passion for supporting local schools, churches, and charitable organizations, and a few years later, smoking thousands of pounds of meat out of a garage just wouldn’t cut it </p>
+		</div>
+		<div class="text8">
+			<p>anymore.
+
+			After trials, tribulations, and a whole lot of burnt ends, we finally flipped that “Hot Brisket Now” sign on in October of 2009. Within the first hour, a line had formed out the door and then around the corner. <i>Read More</i></p>
+		</div>
+	</div>
+
+	<div class="test2"></div>
+
+	<div class="footer">
+		<img src="logo2.png" class="logo2">
+		<img src="logo3.png" class="logo3">
+		<div class="link">
+			<p class="top">Links</p>
+			<li><a href="#">FAQ</a></li>
+			<li><a href="#">Careers</a></li>
+			<li><a href="#">Gift Card Balance</a></li>
+			<li><a href="#">Donation Requests</a></li>			
+			<li><a href="#">The 4R Foundation</a></li>
+			<li><a href="#">Press</a></li>
+		</div>
+		<div class="river">
+			<p class="top">4 Rivers Family</p>
+			<li><a href="#">4Roots</a></li>
+			<li><a href="#">4Roots Cafe</a></li>
+			<li><a href="#">The Coop</a></li>
+			<li><a href="#">4R Bakery and Specialty Cakes</a></li>
+			<li><a href="#">4R Cantina Barbacoa Food Truck</a>
+			<li><a href="#">4R Signature Products</a></li>
+		</div>		
+		<div class="connect">
+			<li class="top">Connect</li>
+			<li><a href="#">1-844-4RIVERS</a></li>
+			<li><a href="#" class="ctc">Contact Us</a></li>
+			<div class="sosmed">
+				<img src="sosmed1.png" class="sosmed1">
+				<img src="sosmed2.png" class="sosmed2">
+				<img src="sosmed3.png" class="sosmed3">
+				<img src="sosmed4.png" class="sosmed4">
+			</div>		
+		</div>
+	</div>
+
+	<div class="copyright">
+		<li><a href="#">Privacy Policy</a></li>
+		<li><a href="#">Terms of Use</a></li>
+		<li><a href="#">Accessibility</a></li>
+		<li class="cr">©2023 4 Rivers Smokehouse</li>
+	</div>
+</body>
+</html>
